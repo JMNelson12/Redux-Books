@@ -8,9 +8,12 @@ class BookDetail extends Component {
     }
     return (
       <div>
-        <h3> Details For: </h3>
-        <div> { this.props.book.title } </div>
+        <h1>{ this.props.book.title } </h1>
         <div>Pages: {this.props.book.pages} </div>
+        <div>
+          <div>Author: {this.props.book.author.name} </div>
+          <img src={this.props.book.author.image} />
+        </div>
       </div>
     )
   }
